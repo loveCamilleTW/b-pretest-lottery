@@ -6,11 +6,12 @@ This is one of the questions in BAT's pre-test.
 
 抽抽樂總共有五種獎項, 1,2 獎各只有一個, 3 獎有 2 個，4 獎有 5 個，5 獎有 11 個，請寫出一個程式可以「隨機」的取得「不重複」的禮物，
 且：
-1 獎中獎機率為 0.1%
-2 獎中獎機率為 2.3%
-3 獎中獎機率為 13%
-4 獎中獎機率為 18%
-5 獎中獎機率為 25%
+
+- 1 獎中獎機率為 0.1%
+- 2 獎中獎機率為 2.3%
+- 3 獎中獎機率為 13%
+- 4 獎中獎機率為 18%
+- 5 獎中獎機率為 25%
 
 ### 這一題要麻煩大家不要生成隨機陣列
 
@@ -25,4 +26,4 @@ This is one of the questions in BAT's pre-test.
 
 ## Live Demo
 
-Check out the live demo [here](https://lovecamilletw.github.io/b-pretest-bigNumber/).
+Check out the live demo [here](https://lovecamilletw.github.io/b-pretest-lottery/).
