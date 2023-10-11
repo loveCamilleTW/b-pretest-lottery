@@ -1,27 +1,28 @@
-# React + TypeScript + Vite
+# Lottery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is one of the questions in BAT's pre-test.
 
-Currently, two official plugins are available:
+## Original question
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+抽抽樂總共有五種獎項, 1,2 獎各只有一個, 3 獎有 2 個，4 獎有 5 個，5 獎有 11 個，請寫出一個程式可以「隨機」的取得「不重複」的禮物，
+且：
+1 獎中獎機率為 0.1%
+2 獎中獎機率為 2.3%
+3 獎中獎機率為 13%
+4 獎中獎機率為 18%
+5 獎中獎機率為 25%
 
-## Expanding the ESLint configuration
+### 這一題要麻煩大家不要生成隨機陣列
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+重點請放在抽獎這件事情上
+抽獎的本質就是不重複的隨機抽取
 
-- Configure the top-level `parserOptions` property like this:
+### 不重複：是指禮物被抽走之後，就不能再被抽了
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+例如 3 獎是 3 隻 iPhone，iPhone A 被抽走了，給人了，理所當然就不能再被抽，但是，抽獎箱內還有 iPhone B 跟 iPhone C 可以抽！！
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### 解題的方法很多種，但是，我們題目已經註明不要使用的方法就請大家不要使用~ 謝謝
+
+## Live Demo
+
+Check out the live demo [here](https://lovecamilletw.github.io/b-pretest-bigNumber/).
